@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const app = require("./app");
 const {
   DB_HOST,
@@ -10,8 +9,9 @@ const {
   IP_SERVER,
 } = require("./constants");
 
-const PORT = process.env.POST || 3977;
-
+const PORT = 3200;
+app.get(`/api/${API_VERSION}/auth`, (req, res)=> res.send('Holi'));
+console.log(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`);
 mongoose
   .connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, {
     useNewUrlParser: true,

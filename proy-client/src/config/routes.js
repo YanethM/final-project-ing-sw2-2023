@@ -1,5 +1,7 @@
 /* Components > Layouts > Pages > routes */
-import { LayoutGeneral } from "../layouts/LayoutGeneral";
+import { LayoutGeneral } from "../layouts/dashaboard/LayoutGeneral";
+import { LayoutUser } from "../layouts/users/LayoutUser";
+
 import { Admin } from "../pages/admin/Admin";
 import { SignIn } from "../pages/admin/SignIn";
 import { Home } from "../pages/Home";
@@ -12,9 +14,9 @@ const AdminRoutes = [
 ];
 
 const GeneralRoutes = [
-  { path: "/", component: Home, layout: LayoutGeneral },
-  { path: "/contact", component: Contact, layout: LayoutGeneral },
-  { path: "*", component: NotFound, layout: LayoutGeneral },
+  { path: "/", component: Home, layout: LayoutUser },
+  { path: "/contact", component: Contact, layout: LayoutUser },
+  { path: "*", component: NotFound, layout: LayoutUser },
 ];
 
 const allRoutesProject = [...AdminRoutes, ...GeneralRoutes];

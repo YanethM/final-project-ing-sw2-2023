@@ -1,8 +1,8 @@
 /* rafc */
 import React, { useState } from "react";
 import { Layout, Button } from "antd";
-import { MenuSider } from "../components/MenuComponent/MenuSider/MenuSider";
-import { MenuTop } from "../components/MenuComponent/MenuTop/MenuTop";
+import { MenuSider } from "../../components/MenuComponent/MenuSider/MenuSider";
+import { MenuTop } from "../../components/MenuComponent/MenuTop/MenuTop";
 import { GithubOutlined } from "@ant-design/icons";
 import "./LayoutGeneral.scss";
 
